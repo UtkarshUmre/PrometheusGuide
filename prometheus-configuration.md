@@ -34,3 +34,9 @@ scrape_configs:
           - "YOUR_VM_INSTANCE_IP:9100" # External IP of VM 1
           - "YOUR_VM_INSTANCE_IP:9100" # External IP of VM 2
 ```
+
+After making changes to the `prometheus.yaml` file, Prometheus does not automatically apply the new configurations. To apply the changes, you need to restart the Prometheus process.
+
+```bash
+sudo systemctl restart prometheus
+```
