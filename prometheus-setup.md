@@ -65,13 +65,13 @@ sudo cp -r console_libraries /etc/prometheus
 10. copy prometheus.yaml file into /etc/prometheus folder
 
 ```bash
-sudo cp prometheus.yaml /etc/prometheus
+sudo cp prometheus.yml /etc/prometheus
 ```
 
 11. update permissions
 
 ```bash
-sudo chown prometheus:prometheus /etc/prometheus/prometheus.yaml
+sudo chown prometheus:prometheus /etc/prometheus/prometheus.yml
 ```
 
 12. create unit service file for prometheus server service
